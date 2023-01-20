@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d9d9d9;
+}
+nav .logo {
+  font-size: 25px;
+  margin-left: 20px;
+}
+nav .toggle {
+  opacity: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #777;
+  padding: 0 10px;
+}
+nav ul li .btn {
+  margin-right: 20px;
+}
+@media screen and (max-width: 668px) {
+  nav ul {
+    display: none;
+  }
+  nav .toggle {
+    cursor: pointer;
+    opacity: 1;
+    margin-right: 25px;
+  }
+  nav .toggle:hover {
+    color: dodgerblue;
+    font-size: 20px;
+  }
+}
+
+.hero .btn, nav ul li .btn {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  background: dodgerblue;
+  color: #d9d9d9;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+.hero h3,
+.hero p {
+  padding: 10px 0;
+}
+.hero .cars {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .cars img {
+  width: 150px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.hero .cars img:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 668px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero .heroLeft {
+    width: 100%;
+    margin-left: 20px;
+  }
+  .hero .heroRight img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
